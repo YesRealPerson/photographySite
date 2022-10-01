@@ -3,7 +3,7 @@
 	<head>
 		<title>That's crazy</title>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="CSS/index.css" rel="stylesheet" type="text/css" />
         
     </head>
     <body>
@@ -11,20 +11,21 @@
             <h1>Stephen Park</h1>
         </div>
         <div id="nav">
-
-            <a href="about">
-
-            </a>
-            <a href="photos">
-
-            </a>
-            <a href="digital">
-
-            </a>
-            <a href="resume">
-
-            </a>
-
+            <p>
+                <a href="about.html">
+                    About Me
+                </a>
+                <a href="photos.html">
+                    Photography
+                </a>
+                <a href="digital.html">
+                    Digital Art
+                </a>
+                <a style="border-right: 1px white solid;"href="resume.html">
+                    Resume
+                </a>
+            </p>
+            
         </div>
         <div id = "container">
             <img id="1" src="pictures/1.jpeg" alt="failed to load image">
@@ -32,6 +33,8 @@
             <img id="3" src="pictures/3.jpeg" alt="failed to load image">
             <img id="4" src="pictures/4.jpeg" alt="failed to load image">
         </div>
-        <script src="script.js" defer></script>
+        <div id = "overlay"></div>
+        <script src="JS/index.js" defer></script>
+        <script src="JS/dim.js" defer></script>
     </body>
 </html>

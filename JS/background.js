@@ -1,0 +1,1 @@
+document.body.style.backgroundImage = "url('pictures/"+Math.floor(Math.random()*4+1)+".jpeg')";
