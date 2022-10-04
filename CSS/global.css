@@ -1,0 +1,136 @@
+body{
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    background-size:cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+body, body *{
+    pointer-events: none;
+}
+h1{
+    font-size: 100px;
+    color: rgba(255,255,255,1);
+}
+h2{
+    margin: 0px;
+}
+img{
+    object-fit: cover;
+    border: 1px white solid;
+}
+img:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+#main img{
+    pointer-events: all;
+}
+#over{
+    z-index: 5;
+    position:absolute;
+    width: 100%;
+    height:100%;
+    left:0;
+    top:0;
+    pointer-events: none;
+}
+#over img{
+    left:0;
+    visibility: hidden;
+    object-fit: contain;
+    position: absolute;
+    height:100%;
+    width:auto;
+}
+#art{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+#art *{
+    width:100%;
+    aspect-ratio: 1/1;
+}
+#back{
+    position: absolute;
+    z-index: 5;
+    top: 20px;
+    left: 20px;
+    font-size: 2vw;
+    background-color: rgba(0,0,0,0.3);
+    border: 1px white solid;
+    padding: 5px;
+}
+a{
+    pointer-events: all;
+    text-decoration: none;
+}
+a:link{
+    color: white;
+  }
+  a:visited{
+    color: white;
+  }
+  a:hover{
+    color: rgba(255,255,255,0.5);
+  }
+  a:active{
+    color: white;
+  }
+#under{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    z-index: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+#text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    /* background-color: rgba(0,0,0,1); */
+    z-index: 5;
+}
+#main{
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.3);
+    border: 1px white solid;
+    padding: 20px;
+    margin: 150px;
+    font-size: 2vw;
+    margin-top: 200px;
+    
+}
+
+.box{
+    background-color: rgba(225,225,225,0.75);
+    border: 1px black solid;
+    padding: 50px;
+}
+.box p{
+    font-size: 20px;
+}
+.text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

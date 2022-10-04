@@ -1,1 +1,5 @@
-document.body.style.backgroundImage = "url('pictures/"+Math.floor(Math.random()*4+1)+".jpeg')";
+var random = Math.floor(Math.random()*4+1);
+document.body.style.backgroundImage = "url('pictures/"+random+".jpeg')";
+if(random == 1){
+    document.body.style.backgroundPosition = "center";
+}

@@ -1,52 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<title>That's crazy</title>
+		<title>Resume</title>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-        <link href="about.css" rel="stylesheet" type="text/css" />
+        <link href="CSS/global.css" rel="stylesheet" type="text/css" />
         
     </head>
     <body>
+        <div id="back"><a href="./">BACK</a></div>
+        <div id="under"></div>
         <div id = "text">
             <h1><span>RESUME</span></h1>
         </div>
         <div id="main">
-            <div class ="box" id="b1">
-                <h2>Example Text</h2>
-                <div class="text">
-                    <p>
-                        Picture goes here
-                    </p>
-                </div>
-            </div>
-            <div  class ="box" id="b2">
-                <h2>Example Text</h2>
-                <div class="text">
-                    <p>
-                        Picture goes here
-                    </p>
-                </div>
-            </div>
-            <div class ="box"  id="b3">
-                <h2>Example Text</h2>
-                <div class="text">
-                    <p>
-                        Picture goes here
-                    </p>
-                </div>
-            </div>
-            <div class ="box"  id="b4">
-                <h2>Example Text</h2>
-                <div class="text">
-                    <p>
-                        Picture goes here
-                    </p>
-                </div>
-            </div>
+            This is where I would write something interesting about myself, but I'm not that interesting.
         </div>
-        <div id="overlay">
-        </div>
-        <script src="about.js" defer></script>
-        <script src="dim.js" defer></script>
+        <div id="overlay"></div>
+        <script>
+            document.body.style.backgroundImage = "url('pictures/"+Math.floor(Math.random()*4+1)+".jpeg')";
+        </script>
+        <!-- <script src="JS/dim.js" defer></script> -->
     </body>
 </html>
